@@ -5,7 +5,7 @@ COPY go.mod .
 COPY go.sum .
 RUN go mod download
 COPY . .
-RUN go build -o demo ./cmd/main.go
+RUN go build -o demo ./main.go
 
 FROM alpine
 COPY --from=build /build/demo /usr/bin/demo
