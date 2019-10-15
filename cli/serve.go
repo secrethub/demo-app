@@ -27,7 +27,7 @@ func (cmd *ServeCommand) Register(r command.Registerer) {
 	clause := r.Command("serve", "Runs the secrethub example by serving a web page.")
 
 	clause.Flag("host", "The host to serve the webpage on").Short('h').Default("127.0.0.1").StringVar(&cmd.host)
-	clause.Flag("port", "The port to serve the webpage on").Short('p').Default("8080").IntVar(&cmd.port)
+	clause.Flag("port", "The port to serve the webpage on").Default("8080").IntVar(&cmd.port)
 
 	command.BindAction(clause, cmd.Run)
 }
