@@ -14,3 +14,5 @@
 This is a simple application used to help you [get started](https://secrethub.io/docs/start/getting-started/) with [SecretHub](https://secrethub.io).
 
 It serves a web page and tries to connect to https://demo.secrethub.io/api/basic-auth using credentials provided in the environment (`DEMO_USERNAME` and `DEMO_PASSWORD`).
+If they are set correctly, it shows a success page. If not, it shows an error page.
+You can use this to test whether you've properly set up [`secrethub run`](https://secrethub.io/docs/reference/cli/run/).
