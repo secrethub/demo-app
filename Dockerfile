@@ -14,7 +14,7 @@ RUN apk add --repository https://alpine.secrethub.io/alpine/edge/main --allow-un
 ADD secrethub.env .
 
 ENV SECRETHUB_DEMO_SERVE_HOST 0.0.0.0
-ENV SECRETHUB_DEMO_SERVE_PORT 80
+ENV SECRETHUB_DEMO_SERVE_PORT 8080
 
 ENTRYPOINT ["secrethub", "run", "--"]
 CMD ["secrethub", "demo", "serve"]
