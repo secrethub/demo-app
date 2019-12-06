@@ -13,6 +13,6 @@ COPY --from=build /build/demo /usr/bin/demo
 RUN apk add --repository https://alpine.secrethub.io/alpine/edge/main --allow-untrusted secrethub-cli
 ADD secrethub.env .
 
-EXPOSE 80
+EXPOSE 8080
 ENTRYPOINT ["secrethub", "run", "--"]
-CMD ["demo", "serve", "--host", "0.0.0.0", "--port", "80"]
+CMD ["demo", "serve", "--host", "0.0.0.0", "--port", "8080"]
