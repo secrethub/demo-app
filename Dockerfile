@@ -10,7 +10,7 @@ RUN go build -o demo ./main.go
 FROM alpine
 COPY --from=build /build/demo /usr/bin/demo
 
-RUN apk add --repository https://alpine.secrethub.io/alpine/edge/main --allow-untrusted secrethub-cli=0.34.0-r0
+RUN apk add --repository https://alpine.secrethub.io/alpine/edge/main --allow-untrusted secrethub-cli
 
 EXPOSE 8080
 ENTRYPOINT ["secrethub", "run", "--"]
