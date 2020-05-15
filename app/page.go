@@ -1,6 +1,6 @@
 package app
 
-const page = `
+const defaultPage = `
 <!doctype html>
 <html lang="en">
 <head>

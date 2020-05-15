@@ -3,6 +3,7 @@ package app
 import (
 	"fmt"
 	"io"
+	"io/ioutil"
 	"net/http"
 	"os"
 )
@@ -13,17 +14,28 @@ type Server struct {
 
 	appUsername string
 	appPassword string
+
+	page []byte
 }
 
-func NewServer(host string, port int) *Server {
+func NewServer(host string, port int, pagePath string) *Server {
 	username := os.Getenv("DEMO_USERNAME")
 	password := os.Getenv("DEMO_PASSWORD")
+
+	page := []byte(defaultPage)
+	if pagePath != "" {
+		altPage, err := ioutil.ReadFile(pagePath)
+		if err == nil {
+			page = altPage
+		}
+	}
 
 	return &Server{
 		host:        host,
 		port:        port,
 		appUsername: username,
 		appPassword: password,
+		page:        page,
 	}
 }
 
@@ -36,7 +48,7 @@ func (s *Server) Serve() error {
 }
 
 func (s *Server) ServeIndex(w http.ResponseWriter, r *http.Request) {
-	_, err := w.Write([]byte(page))
+	_, err := w.Write(s.page)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 	}
