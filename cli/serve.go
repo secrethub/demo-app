@@ -14,6 +14,8 @@ type ServeCommand struct {
 
 	host string
 	port int
+
+	altPage string
 }
 
 func NewServeCommand(io ui.IO) *ServeCommand {
@@ -28,6 +30,7 @@ func (cmd *ServeCommand) Register(r command.Registerer) {
 
 	clause.Flag("host", "The host to serve the webpage on").Short('h').Default("127.0.0.1").StringVar(&cmd.host)
 	clause.Flag("port", "The port to serve the webpage on").Default("8080").IntVar(&cmd.port)
+	clause.Flag("alt-page", "Path to alternative page file to serve").StringVar(&cmd.altPage)
 
 	command.BindAction(clause, cmd.Run)
 }
@@ -35,5 +38,5 @@ func (cmd *ServeCommand) Register(r command.Registerer) {
 // Run handles the command with the options as specified in the command.
 func (cmd *ServeCommand) Run() error {
 	fmt.Fprintf(cmd.io.Stdout(), "Serving example app on http://%s:%d\n", cmd.host, cmd.port)
-	return app.NewServer(cmd.host, cmd.port).Serve()
+	return app.NewServer(cmd.host, cmd.port, cmd.altPage).Serve()
 }
