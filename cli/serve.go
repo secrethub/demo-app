@@ -28,8 +28,8 @@ func NewServeCommand(io ui.IO) *ServeCommand {
 func (cmd *ServeCommand) Register(r command.Registerer) {
 	clause := r.CreateCommand("serve", "Runs the secrethub example by serving a web page.")
 
-	clause.StringVarP(&cmd.host, "host", "h", "127.0.0.1", "The host to serve the webpage on", false, false)
-	clause.IntVar(&cmd.port, "port", 8080, "The port to serve the webpage on", false, false)
+	clause.StringVarP(&cmd.host, "host", "h", "127.0.0.1", "The host to serve the webpage on", true, false)
+	clause.IntVar(&cmd.port, "port", 8080, "The port to serve the webpage on", true, false)
 	clause.StringVar(&cmd.altPage, "alt-page", "", "Path to alternative page file to serve", false, false)
 
 	command.BindAction(clause, nil, cmd.Run)
