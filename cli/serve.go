@@ -26,13 +26,13 @@ func NewServeCommand(io ui.IO) *ServeCommand {
 
 // Register registers the command, arguments and flags on the provided Registerer.
 func (cmd *ServeCommand) Register(r command.Registerer) {
-	clause := r.Command("serve", "Runs the secrethub example by serving a web page.")
+	clause := r.CreateCommand("serve", "Runs the secrethub example by serving a web page.")
 
-	clause.Flag("host", "The host to serve the webpage on").Short('h').Default("127.0.0.1").StringVar(&cmd.host)
-	clause.Flag("port", "The port to serve the webpage on").Default("8080").IntVar(&cmd.port)
-	clause.Flag("alt-page", "Path to alternative page file to serve").StringVar(&cmd.altPage)
+	clause.StringVarP(&cmd.host, "host", "h", "127.0.0.1", "The host to serve the webpage on", false, false)
+	clause.IntVar(&cmd.port, "port", 8080, "The port to serve the webpage on", false, false)
+	clause.StringVar(&cmd.altPage, "alt-page", "", "Path to alternative page file to serve", false, false)
 
-	command.BindAction(clause, cmd.Run)
+	command.BindAction(clause, nil, cmd.Run)
 }
 
 // Run handles the command with the options as specified in the command.

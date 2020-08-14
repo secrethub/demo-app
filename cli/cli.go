@@ -11,6 +11,6 @@ func Run(args []string) error {
 	NewServeCommand(io).Register(app)
 
 	// Parse also executes the command when parsing is successful.
-	_, err := app.Parse(args)
+	err := app.Application.Execute()
 	return err
 }
