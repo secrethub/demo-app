@@ -188,10 +188,16 @@ github.com/secrethub/secrethub-cli v0.40.0 h1:z0pU5Bi2X+RA4peUe0r5yvwnkRUT37yiOd
 github.com/secrethub/secrethub-cli v0.40.0/go.mod h1:YdR/QrXZGSHH0Kjdv3H9stjxT6eomQdoZzs5RDrlq6o=
 github.com/secrethub/secrethub-cli v0.40.1-0.20200713154417-4a100694b191 h1:gwsdXCEypJf9or3oOQL/seqzXdS8+DwvixI6If5J4oc=
 github.com/secrethub/secrethub-cli v0.40.1-0.20200713154417-4a100694b191/go.mod h1:YdR/QrXZGSHH0Kjdv3H9stjxT6eomQdoZzs5RDrlq6o=
+github.com/secrethub/secrethub-cli v0.41.2-0.20201130081058-6d075df7c818 h1:Vd0uwpUpUpTbxdyooI0HCF5zieNQtnCw2cOvOQUXclQ=
+github.com/secrethub/secrethub-cli v0.41.2-0.20201130081058-6d075df7c818/go.mod h1:ZrATF8ILiTPXfMDvawOhpyggX7ABOBmxT3BiPPHhtsQ=
+github.com/secrethub/secrethub-cli v0.41.2 h1:56kxS2OGaOjPBtAhZXwnfzDS60teZS75/bD2djtNg+U=
+github.com/secrethub/secrethub-cli v0.41.2/go.mod h1:6mTH9JYMAzqxHPY4+UOpRpIFpkz1/8fYW94qL4dAoUo=
 github.com/secrethub/secrethub-go v0.21.0 h1:5xbC+gdku7MXUQmlP5SPhAPLF+/U31soLKbyXwNyM+M=
 github.com/secrethub/secrethub-go v0.21.0/go.mod h1:rc2IfKKBJ4L0wGec0u4XnF5/pe0FFPE4Q1MWfrFso7s=
 github.com/secrethub/secrethub-go v0.30.0 h1:Nh1twPDwPbYQj/cYc1NG+j7sv76LZiXLPovyV83tZj0=
 github.com/secrethub/secrethub-go v0.30.0/go.mod h1:tDeBtyjfFQX3UqgaZfY+H4dYkcGfiVzrwLDf0XtfOrw=
+github.com/secrethub/secrethub-go v0.31.0 h1:0KoG0KHBOa5knkvf3K0f6sKuPSQ5VGPXLD4ttC9Eul8=
+github.com/secrethub/secrethub-go v0.31.0/go.mod h1:ZIco8Y0G0Pi0Vb7pQROjvEKgSreZiRMLhAbzWUneUSQ=
 github.com/shurcooL/sanitized_anchor_name v1.0.0/go.mod h1:1NzhyTcUVG4SuEtjjoZeVRXNmyL/1OwPU0+IJeTBvfc=
 github.com/sirupsen/logrus v1.2.0/go.mod h1:LxeOpSwHxABJmUn/MG1IvRgCAasNZTLOkJPxbbu5VWo=
 github.com/soheilhy/cmux v0.1.4/go.mod h1:IM3LyeVVIOuxMH7sFAkER9+bJ4dT7Ms6E4xg4kGIyLM=
