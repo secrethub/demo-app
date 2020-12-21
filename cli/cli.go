@@ -10,7 +10,6 @@ func Run(args []string) error {
 	app := cli.NewApp("demo", "")
 	NewServeCommand(io).Register(app)
 
-	// Parse also executes the command when parsing is successful.
-	err := app.Application.Execute()
+	err := app.Cmd.Execute()
 	return err
 }
