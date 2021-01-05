@@ -176,10 +176,13 @@ github.com/rogpeppe/go-internal v1.3.0/go.mod h1:M8bDsm7K2OlrFYOpmOWEs/qY81heoFR
 github.com/russross/blackfriday/v2 v2.0.1/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/satori/go.uuid v1.2.0/go.mod h1:dA0hQrYB0VpLJoorglMZABFdXlWrHn1NEOzdhQKdks0=
 github.com/secrethub/demo-app v0.5.1-0.20201221075813-cc159373e2d5/go.mod h1:XR0VknPwSudqu/qphA4I4f7B7i2CPGydD59G02y8mBM=
+github.com/secrethub/demo-app v0.5.1-0.20201221173924-a1c686b2340e/go.mod h1:WYS7Q0nigGv+iFdRsnWWXZYl3FpSrU5qtz9h7qBxbq0=
 github.com/secrethub/secrethub-cli v0.41.2-0.20201130081058-6d075df7c818 h1:Vd0uwpUpUpTbxdyooI0HCF5zieNQtnCw2cOvOQUXclQ=
 github.com/secrethub/secrethub-cli v0.41.2-0.20201130081058-6d075df7c818/go.mod h1:ZrATF8ILiTPXfMDvawOhpyggX7ABOBmxT3BiPPHhtsQ=
 github.com/secrethub/secrethub-cli v0.41.2-0.20201221081823-5e118018fca7 h1:NF6/XQu6r989jJPh8w9uYp5P33RlXb3wroaIP01uRns=
 github.com/secrethub/secrethub-cli v0.41.2-0.20201221081823-5e118018fca7/go.mod h1:h3x2euAtExcPAGRtqzNfRPPVp3BkfQ1dAYc0dWtj3Mk=
+github.com/secrethub/secrethub-cli v0.41.2-0.20210105184710-d2d6c8d4b12d h1:fp5DW/G2y6pmIG1DNBc5lRBFfpvjm5kr16j5Xfd+OU8=
+github.com/secrethub/secrethub-cli v0.41.2-0.20210105184710-d2d6c8d4b12d/go.mod h1:RHtqE+XDmIW8Syt/UF+Km0Bsa7Lq5N2H1tZoLaMHK8o=
 github.com/secrethub/secrethub-go v0.31.0 h1:0KoG0KHBOa5knkvf3K0f6sKuPSQ5VGPXLD4ttC9Eul8=
 github.com/secrethub/secrethub-go v0.31.0/go.mod h1:ZIco8Y0G0Pi0Vb7pQROjvEKgSreZiRMLhAbzWUneUSQ=
 github.com/shurcooL/sanitized_anchor_name v1.0.0/go.mod h1:1NzhyTcUVG4SuEtjjoZeVRXNmyL/1OwPU0+IJeTBvfc=
@@ -312,6 +315,10 @@ golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd/go.mod h1:h1NjWce9XRLGQEsW7w
 golang.org/x/sys v0.0.0-20200331124033-c3d80250170d/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20200501052902-10377860bb8e h1:hq86ru83GdWTlfQFZGO4nZJTU4Bs2wfHl8oFHRaXsfc=
 golang.org/x/sys v0.0.0-20200501052902-10377860bb8e/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/sys v0.0.0-20201119102817-f84b799fce68 h1:nxC68pudNYkKU6jWhgrqdreuFiOQWj1Fs7T3VrH4Pjw=
+golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf h1:MZ2shdL+ZM/XzY3ZGOnh4Nlpnxz5GSOhOmtHo3iPU6M=
+golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=

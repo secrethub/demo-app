@@ -5,11 +5,11 @@ import (
 	"github.com/secrethub/secrethub-cli/internals/cli/ui"
 )
 
-func Run(args []string) error {
+func Run() error {
 	io := ui.NewUserIO()
 	app := cli.NewApp("demo", "")
 	NewServeCommand(io).Register(app)
 
-	err := app.Cmd.Execute()
+	err := app.Root.Cmd.Execute()
 	return err
 }
