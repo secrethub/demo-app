@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	err := cli.Run(os.Args[1:])
+	err := cli.Run()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "encountered an error: %s\n", err)
 		os.Exit(1)
